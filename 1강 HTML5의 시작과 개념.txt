@@ -1,0 +1,59 @@
+1. TAG 구조와 문법
+
+	<태그 명령어>		<html>,<head>,<body>,<h1>,<p>,<br>
+	{ CHECK : 태그 작성시 밖에서 안으로 쓰는 연습 }
+
+<!DOCTYPE html>		--- 지금 사용하는 문서 타입은 HTML 형식을 사용
+<html lang = "ko">	--- HTML 문서의 시작을 알리며 lang 속성을 사용해 문서에서 사용할 언어를 지정합니다.
+
+<head>			--- 문서 서두에 해당, CSS를 비롯한 자바스크립트, 외부 페이지 연결 등의 구성을 하는 부분
+
+	<meta charset = "urf - 8">	--- 언어 캐릭터셋 -> HTML로 저장된 파일 내부에는 태그를 포함한 텍스트 등의 콘텐츠
+	<title></title>			--- 브라우저 탭 또는 즐겨찾기에 표시되는 제목 영역
+
+</head>
+<body>			--- 실제 브라우저 화면에 표시되는 영역
+
+</body>
+</html>
+
+* Metadata Content(메타 데이터 콘텐츠)
+- 문서의 표현이나 동작을 설정하고, 다른 문서와의 관계 설정 후 다른 문서에 정보를 전달하는 콘텐츠입니다.
+ 예) base, command, link, meta, noscript, script, style, title
+
+* Flow Content(플로우 콘텐츠)
+- 문서나 Application의 본문(body 태그) 안에서 사용되는 콘텐츠입니다.
+ 예)a, abbr, address, article, aside, audio, b, bdi, bdo, blockquote, br, button, 
+   canvas, cite, code, command, datalist, del, detalis, dfn, div, dl, em, embed,
+   fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, wbr text, header, hgroup, hr, i, iframe, img, input,
+   ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript, object, ol,
+   output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span,
+   string, sub, sup, svg, table, textarea, time, ul, var, video,
+
+  - area (map 요소의 자식 요소인 경우)
+   - style (scoped 속성이 있으면)
+
+* Sectioning Content (구획 콘텐츠)
+- Headings Content와 footer(<footer>)를 정의하는 콘텐츠입니다.
+ 예) article, aside, nav, section
+
+* Heading Content(제목 콘텐츠)
+- Sectioning Content의 header를 정의하는 콘텐츠입니다.
+ 예) h1, h2, h3, h4, h5, h6
+
+* Phrasing Content(구문 콘텐츠)
+- 텍스트와 텍스트가 포함된 마크업을 정의하는 콘텐츠입니다.
+ 예) abbr, audio, b, bdi, bdo, br, button, cnavas, cite, code, command, datalist, dfn, em, embed, i,
+     iframe, img, input, kbd, keygen, label, mark, math, meter, noscript, object, output, progress, q, ruby,
+     s, samp, script, select, small, span, strong, sub, sup, svg, textarea, time, var, video, wbr, text
+
+    - a (구문만을 포함하는 경우)
+      - area (map요소의 자식 요소인 경우)
+      - del (구문만을 포함하는 경우)
+      - ins (구문만을 포함하는 경우)
+      - map (프레이징 콘텐츠만을 포함하는 경우)
+
+* Embedded Content(임베디드 콘텐츠)
+- 다른 리소스나 콘텐츠를 문서에 삼입하는 콘텐츠입니다.
+ 예) audio, canvas, embed, iframe, img, math, object, svg, video
+
