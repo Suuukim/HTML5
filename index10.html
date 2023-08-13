@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스,나열</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 5px solid #000;
+            float:left; /* left:왼쪽으로부터 나열되게 / right:오른쪽으로부터 나열 */
+            margin-right: 30px;
+        }
+       .boxr{
+        width: 500px;
+        height: 500px;
+        border: 5px solid #000;
+        float: none; /* 옆의 박스에 영향을 주는 속성,나열하고자 하는
+        박스함꼐 나열값 */
+       }
+    </style>
+</head>
+<body>
+    <!-- float:박스를 옆으로 나열 할 때 사용/떠다니는~ / 레이아웃을 나열하거나 형성+삽화를 넣을 때 -->
+    <div>1</div>
+    <div>2</div>
+    <div class="boxr">3</div>
+
+</body>
+</html>
