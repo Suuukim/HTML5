@@ -25,26 +25,45 @@
         height: 300px;
         margin: 0;
         margin-top: 30px;
-        clear: left;
+        clear: both;
        }
+       #allbox{
+        float: none;
+        border: none;
+        margin: 0 auto;
+        background-color: aquamarine;
+        width: 720px; /* w:200*3(=600) + b:5*6(=30) + 30*3(90) */
+        height: 210px; /* h:200 + b:5*2(=10) */
+       }
+       .boxs{
+        padding: 20px;
+        box-sizing: border-box; /* 패딩,선을 폭값안에서 함께 표현 */
+       }
+
+       
     </style>
 </head>
 <body>
     <!-- float:박스를 옆으로 나열 할 때 사용/떠다니는~ / 레이아웃을 나열하거나 형성+삽화를 넣을 때 -->
-    <div>1</div>
-    <div>2</div>
-    <div class="boxr">3</div>
+    <div id="allbox">
+        <div>1</div>
+        <div>2</div>
+        <div class="boxr">3</div>
+    </div>
 
 
     <!-- clear:float와 함께 사용,float 제거 할 떄 사용
     left: 좌측 나열을 제거
     right: 우측 나열을 제거
     both: 양쪽 나열을 제거
-     -->
+    
     <div class="boxc">
         제거할거야!
     </div>
+    -->
 
+    <!-- box-sizing : 박스 -->
+    <div class="boxs">box-sizing</div>
 
 </body>
 </html>
