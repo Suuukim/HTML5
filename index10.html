@@ -7,18 +7,25 @@
     <title>박스,나열</title>
     <style>
         div{
-            width: 500px;
-            height: 500px;
+            width: 200px;
+            height: 200px;
             border: 5px solid #000;
             float:left; /* left:왼쪽으로부터 나열되게 / right:오른쪽으로부터 나열 */
             margin-right: 30px;
         }
        .boxr{
-        width: 500px;
-        height: 500px;
+        width: 200px;
+        height: 200px;
         border: 5px solid #000;
-        float: none; /* 옆의 박스에 영향을 주는 속성,나열하고자 하는
+        float: left; /* 옆의 박스에 영향을 주는 속성,나열하고자 하는
         박스함꼐 나열값 */
+       }
+       .boxc{
+        width: 500px;
+        height: 300px;
+        margin: 0;
+        margin-top: 30px;
+        clear: left;
        }
     </style>
 </head>
@@ -27,6 +34,17 @@
     <div>1</div>
     <div>2</div>
     <div class="boxr">3</div>
+
+
+    <!-- clear:float와 함께 사용,float 제거 할 떄 사용
+    left: 좌측 나열을 제거
+    right: 우측 나열을 제거
+    both: 양쪽 나열을 제거
+     -->
+    <div class="boxc">
+        제거할거야!
+    </div>
+
 
 </body>
 </html>
